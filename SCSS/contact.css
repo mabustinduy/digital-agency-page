@@ -1,0 +1,293 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+body h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+body h3 {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+body h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+body p {
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  float: none;
+}
+
+header {
+  position: fixed;
+  height: 5vh;
+  width: 100%;
+  max-width: 1800px;
+}
+
+header .navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.822);
+}
+
+header .navmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-right: 30px;
+}
+
+header .navmenu ul li {
+  margin-left: 30px;
+}
+
+header .navmenu ul li .active {
+  color: #550098;
+}
+
+header .navmenu ul li a {
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+header .navmenu ul li a:hover {
+  color: #550098;
+}
+
+header .line-menu {
+  background-color: rgba(211, 211, 211, 0.527);
+  height: 1px;
+}
+
+header .topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  padding: 15px 5px 15px 5px;
+}
+
+header .topnav .mobile-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .topnav .mobile-nav-container .mobile-nav-logo {
+  width: 20%;
+}
+
+header .topnav .active {
+  color: #550098;
+}
+
+header .topnav #myLinks {
+  display: none;
+}
+
+header .topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-align: center;
+}
+
+header .topnav a .icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: none;
+}
+
+@media (min-width: 768px) {
+  header .topnav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navmenu {
+    display: none;
+  }
+}
+
+.presentation {
+  background-image: url(../src/contact-hero.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 800px;
+}
+
+.presentation h1 {
+  font-size: 4rem;
+  color: #550098;
+}
+
+.contact {
+  background-color: #550098;
+  margin-top: none;
+}
+
+.contactflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contactflex .contact-text {
+  max-width: 500px;
+  color: white;
+  padding-left: 10px;
+}
+
+.contactflex .contact-text img {
+  max-width: 100%;
+}
+
+.contactflex .contact-form {
+  max-width: 500px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px;
+}
+
+.contactflex .contact-form label {
+  color: white;
+}
+
+.contactflex input[type=text], .contactflex select, .contactflex textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: Montserrat;
+}
+
+.contactflex input[type=submit] {
+  background-color: white;
+  color: #550098;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contactflex input[type=submit]:hover {
+  background-color: #be85e9;
+  color: white;
+}
+
+.contactflex .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactflex label {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #550098;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100px;
+  bottom: 0;
+  left: 0;
+}
+
+footer h4 {
+  color: white;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=contact.css.map */

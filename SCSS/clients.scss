@@ -1,0 +1,330 @@
+$violet: #550098;
+$menu: rgba(255, 255, 255, 0.822);
+$bgcolor: #f1f1f1;
+$header: #070707;
+$breakpoint-tablet: 768px;
+
+*{
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h4{
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    p{
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+
+}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    float: none
+}
+
+header{
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    max-width: 1800px;
+
+    .navmenu{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $menu;
+   
+    
+    
+            ul{
+                display: flex;
+                list-style-type: none;
+                padding-right: 30px;
+    
+                li{
+                    margin-left: 30px;
+
+                    .active{
+                        color: $violet;
+                    }
+
+                    a{
+                        font-family: Montserrat;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: black;  
+                      
+                    }
+
+                    a:hover {
+                        color: $violet;
+                    }
+
+                    
+          
+                }
+        
+            }
+    }
+
+    .line-menu{
+        background-color: rgba(211, 211, 211, 0.527);
+        height: 1px;
+       
+    }
+
+
+    .topnav{
+        overflow: hidden;
+        background-color:white;
+        position: relative;
+        padding: 15px 5px 15px 5px;
+
+        .mobile-nav-container{
+            display: flex;
+            justify-content: space-between;
+
+            .mobile-nav-logo{
+                width: 20%;
+            }
+        }
+
+        
+
+        .active{
+            color: $violet;
+        }
+        
+        #myLinks {
+            display: none;
+        }
+
+        a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: Montserrat;
+            font-weight: 700;
+            text-align: center;
+
+            .icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: none;
+            }
+
+        }
+
+    }
+
+    @media (min-width: $breakpoint-tablet){
+        .topnav{
+             display: none;
+
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet){
+        .navmenu{
+             display: none;
+
+        }
+    }
+}
+
+
+
+
+
+.presentation{
+    background-image: url(../src/clients-hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 800px;
+
+
+    h1{
+        font-size: 4rem;
+        color: $violet;
+    }
+
+
+}
+
+
+.clients{
+    
+
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 100px;
+        margin: 10% 20% 10% 20%;
+       
+
+        img{
+            width: 90%;
+        }
+
+        img:hover{
+            opacity: 0.5;
+        }
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: center;
+            justify-self: center;
+          }
+          .two {
+            grid-column: 2;
+            grid-row: 1;
+            align-self: center;
+            justify-self: center;
+          }
+          .three {
+            grid-column: 3;
+            grid-row: 1;
+            align-self: center;
+            justify-self: center;
+          }
+          .four {
+            grid-column: 1;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+          }
+          .five {
+            grid-column: 2;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+          }
+          .six {
+            grid-column: 3;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center;
+          }
+    }
+
+    
+
+}
+
+
+
+footer{
+    background-color: $violet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;   
+    bottom: 0;
+    left: 0;
+
+        h4{
+            color: white;
+            padding-right: 10px;
+        }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .clients{
+        .logos {
+         
+            display: grid;
+           
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1em;
+            grid-row-gap: 100px;
+
+
+            .one {
+                grid-column: 1;
+                grid-row: 1;
+                align-self: center;
+                justify-self: center;
+              }
+              .two {
+                grid-column: 2;
+                grid-row: 1;
+                align-self: center;
+                justify-self: center;
+              }
+              .three {
+                grid-column: 1;
+                grid-row: 2;
+                align-self: center;
+                justify-self: center;
+              }
+              .four {
+                grid-column: 2;
+                grid-row: 2;
+                align-self: center;
+                justify-self: center;
+              }
+              .five {
+                grid-column: 1;
+                grid-row: 3;
+                align-self: center;
+                justify-self: center;
+              }
+              .six {
+                grid-column: 2;
+                grid-row: 3;
+                align-self: center;
+                justify-self: center;
+              }
+           
+          }
+    }
+   
+  }

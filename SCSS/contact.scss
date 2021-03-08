@@ -1,0 +1,286 @@
+$violet: #550098;
+$menu: rgba(255, 255, 255, 0.822);
+$bgcolor: #f1f1f1;
+$header: #070707;
+$breakpoint-tablet: 768px;
+
+*{
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+
+    h1{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h2{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h3{
+        font-family: Montserrat;
+        font-weight: 700;
+    }
+
+    h4{
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    p{
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 1.8;
+    }
+
+}
+
+.wrapper{
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    float: none;
+}
+
+header{
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    max-width: 1800px;
+
+    .navmenu{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $menu;
+   
+    
+    
+            ul{
+                display: flex;
+                list-style-type: none;
+                padding-right: 30px;
+    
+                li{
+                    margin-left: 30px;
+
+                    .active{
+                        color: $violet;
+                    }
+
+                    a{
+                        font-family: Montserrat;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: black;  
+                      
+                    }
+
+                    a:hover {
+                        color: $violet;
+                    }
+          
+                }
+        
+            }
+    }
+
+    .line-menu{
+        background-color: rgba(211, 211, 211, 0.527);
+        height: 1px;
+       
+    }
+
+
+    .topnav{
+        overflow: hidden;
+        background-color:white;
+        position: relative;
+        padding: 15px 5px 15px 5px;
+
+        .mobile-nav-container{
+            display: flex;
+            justify-content: space-between;
+
+            .mobile-nav-logo{
+                width: 20%;
+            }
+        }
+
+        
+
+        .active{
+            color: $violet;
+        }
+        
+        #myLinks {
+            display: none;
+        }
+
+        a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: Montserrat;
+            font-weight: 700;
+            text-align: center;
+
+            .icon {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: none;
+            }
+
+        }
+
+    }
+
+    @media (min-width: $breakpoint-tablet){
+        .topnav{
+             display: none;
+
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet){
+        .navmenu{
+             display: none;
+
+        }
+    }
+}
+
+
+
+
+.presentation{
+    background-image: url(../src/contact-hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 800px;
+
+
+    h1{
+        font-size: 4rem;
+        color: $violet;
+    }
+
+
+}
+
+.contact{
+    background-color: $violet;
+    margin-top: none;
+}
+.contactflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .contact-text{
+        max-width: 500px;
+        color: white;
+        padding-left: 10px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .contact-form{
+       max-width: 500px;
+       padding: 20px 20px 20px 20px;
+       border-radius: 15px;
+
+        label{
+            color: white;
+        }
+    }
+
+ 
+    input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc;
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+        font-family: Montserrat;
+  }
+  
+  
+  input[type=submit] {
+    background-color: white;
+    color: $violet;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-color: #be85e9;
+    color: white;
+  }
+  
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  label{
+    font-family: Montserrat;
+    font-weight: 700;
+  }
+}
+
+
+footer{
+    background-color: $violet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;   
+    bottom: 0;
+    left: 0;
+
+        h4{
+            color: white;
+            padding-right: 10px;
+        }
+}
